@@ -7,7 +7,64 @@
 
 
 
+body {
+    font-family: 'DotGothic16', sans-serif;
 
+    .box-calculadora {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgb(161, 161, 161);
+        
+
+        .box-calculadora__head {
+            display: flex;
+            flex-direction: column;
+
+            .box-calculadora__head-title {
+                width: 100%;
+                font-size: 35px;
+                padding: 15px 0 20px 0;
+            }
+
+            .box-calculadora__head-pantalla {
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                background: rgb(231, 231, 231);
+
+                .box-calculadora__head-pantalla-boxDigito {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .box-calculadora__body {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 3px;
+            margin: 10px 10px 0 10px;
+
+            .box-calculadora__body-btn {
+                background: rgb(71, 71, 71);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+            }
+
+            .btn-factor img {
+                width: 20px;
+            }
+
+        }
+    }
+}
 
 
 

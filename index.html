@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/styles-calculadora.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     
     <title>Calculadora Web</title>
 </head>
@@ -14,28 +16,28 @@
         <div class="box-calculadora__head">
             <div class="box-calculadora__head-title">Calculadora Web</div>
             <div id="boxResultado" class="box-calculadora__head-pantalla">
-                <div id="boxNum1">-</div>
-                <div id="boxFactor">-</div>
-                <div id="boxNum2">-</div>
+                <div id="boxNum1" class="box-calculadora__head-pantalla-boxDigito">-</div>
+                <div id="boxFactor" class="box-calculadora__head-pantalla-boxDigito">-</div>
+                <div id="boxNum2" class="box-calculadora__head-pantalla-boxDigito">-</div>
             </div>
         </div>
         <div class="box-calculadora__body">
-            <div class="box-calculadora__body-btn btn0" onclick="btnFuction1(0)">0</div>
-            <div class="box-calculadora__body-btn btn1" onclick="btnFuction1(1)">1</div>
-            <div class="box-calculadora__body-btn btn2" onclick="btnFuction1(2)">2</div>
-            <div class="box-calculadora__body-btn btn3" onclick="btnFuction1(3)">3</div>
-            <div class="box-calculadora__body-btn btn4" onclick="btnFuction1(4)">4</div>
-            <div class="box-calculadora__body-btn btn5" onclick="btnFuction1(5)">5</div>
-            <div class="box-calculadora__body-btn btn6" onclick="btnFuction1(6)">6</div>
-            <div class="box-calculadora__body-btn btn7" onclick="btnFuction1(7)">7</div>
-            <div class="box-calculadora__body-btn btn8" onclick="btnFuction1(8)">8</div>
             <div class="box-calculadora__body-btn btn9" onclick="btnFuction1(9)">9</div>
-            <div class="box-calculadora__body-btn btn-factor-suma" onclick="btnFactor(`+`)">+</div>
-            <div class="box-calculadora__body-btn btn-factor-resta" onclick="btnFactor(`-`)">-</div>
-            <div class="box-calculadora__body-btn btn-factor-multi" onclick="btnFactor(`x`)">x</div>
-            <div class="box-calculadora__body-btn btn-factor-divi" onclick="btnFactor(`/`)">/</div>
-            <div class="box-calculadora__body-btn btn-factor-igual" onclick="btnFactorIgualdad()">=</div>
-            <div class="box-calculadora__body-btn btn-factor-reset" onclick="btnFactorReset()">C</div>
+            <div class="box-calculadora__body-btn btn8" onclick="btnFuction1(8)">8</div>
+            <div class="box-calculadora__body-btn btn7" onclick="btnFuction1(7)">7</div>
+            <div class="box-calculadora__body-btn btn6" onclick="btnFuction1(6)">6</div>
+            <div class="box-calculadora__body-btn btn5" onclick="btnFuction1(5)">5</div>
+            <div class="box-calculadora__body-btn btn4" onclick="btnFuction1(4)">4</div>
+            <div class="box-calculadora__body-btn btn3" onclick="btnFuction1(3)">3</div>
+            <div class="box-calculadora__body-btn btn2" onclick="btnFuction1(2)">2</div>
+            <div class="box-calculadora__body-btn btn1" onclick="btnFuction1(1)">1</div>
+            <div class="box-calculadora__body-btn btn0" onclick="btnFuction1(0)">0</div>
+            <div class="box-calculadora__body-btn btn-factor btn-suma" onclick="btnFactor(`+`)"><img src="assets/img/svgs/sumar-icon.svg" alt="sumar signo"></div>
+            <div class="box-calculadora__body-btn btn-factor btn-resta" onclick="btnFactor(`-`)"><img src="assets/img/svgs/resta-icon.svg" alt="restar signo"></div>
+            <div class="box-calculadora__body-btn btn-factor btn-multi" onclick="btnFactor(`x`)"><img src="assets/img/svgs/multiplicar-icon.svg" alt="multiplicar signo"></div>
+            <div class="box-calculadora__body-btn btn-factor btn-divi" onclick="btnFactor(`/`)"><img src="assets/img/svgs/dividir-icon.svg" alt="dividir signo"></div>
+            <div class="box-calculadora__body-btn btn-factor btn-igual" onclick="btnFactorIgualdad()">=</div>
+            <div class="box-calculadora__body-btn btn-factor btn-reset" onclick="btnFactorReset()"><img src="assets/img/svgs/btn-borar-icon.svg" alt="borrar signo"></div>
         </div>
     </div>
 

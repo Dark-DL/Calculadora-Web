@@ -4,4 +4,85 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  font-family: 'DotGothic16', sans-serif;
+}
+
+body .box-calculadora {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: #a1a1a1;
+}
+
+body .box-calculadora .box-calculadora__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .box-calculadora .box-calculadora__head .box-calculadora__head-title {
+  width: 100%;
+  font-size: 35px;
+  padding: 15px 0 20px 0;
+}
+
+body .box-calculadora .box-calculadora__head .box-calculadora__head-pantalla {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  background: #e7e7e7;
+}
+
+body .box-calculadora .box-calculadora__head .box-calculadora__head-pantalla .box-calculadora__head-pantalla-boxDigito {
+  margin-right: 10px;
+}
+
+body .box-calculadora .box-calculadora__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3px;
+  margin: 10px 10px 0 10px;
+}
+
+body .box-calculadora .box-calculadora__body .box-calculadora__body-btn {
+  background: #474747;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+body .box-calculadora .box-calculadora__body .btn-factor img {
+  width: 20px;
+}
 /*# sourceMappingURL=styles-calculadora.css.map */
