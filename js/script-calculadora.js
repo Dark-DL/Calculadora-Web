@@ -1,4 +1,5 @@
-
+// SELECCION TITLE
+const titleweb = document.getElementById("titleWeb");
 
 // SELECCION DE ESPACIOS
 const boxNum1 = document.getElementById("boxNum1");
@@ -55,7 +56,11 @@ let btnFuction2 = (dig2)=> {
     boxNum2.innerHTML=`${num2}`;
 }
 
+
+let cantidadResultados = 0;
 let btnFactorIgualdad = ()=> {
+    cantidadResultados++;
+    titleweb.innerHTML=`Calculadora Web (${cantidadResultados})`;
     if (factorSelec == `+`) {
         resultado = num1 + num2;
 
@@ -100,6 +105,9 @@ let btnFactorIgualdad = ()=> {
 
 
 let btnFactorReset = ()=> {
+    cantidadResultados = 0;
+    titleweb.innerHTML=`Calculadora Web`;
+
     boxNum1.innerHTML=` `;
     boxFactor.innerHTML=` `;
     boxNum2.innerHTML=` `;
