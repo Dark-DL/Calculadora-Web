@@ -11,7 +11,15 @@
     
     <title id="titleWeb">Calculadora Web</title>
 </head>
-<body>
+<body id="idBody">
+
+    <div class="box-tema" onclick="otherTema()">
+        <div class="box-tema__icon">
+            <img class="sol-icon" src="assets/img/icons/sun-icon.svg" alt="sol astro icon">
+            <img class="luna-icon" src="assets/img/icons/moon-icon.svg" alt="luna astro icon">
+        </div>
+    </div>
+
     <div class="box-calculadora">
         <div class="box-calculadora__head">
             <div class="box-calculadora__head-title">Calculadora Web</div>
@@ -42,5 +50,6 @@
     </div>
 
     <script src="js/script-calculadora.js"></script>
+    <script src="js/script-tema.js"></script>
 </body>
 </html>

@@ -69,6 +69,7 @@ let btnFactorIgualdad = ()=> {
         boxNum2.innerHTML=` `;
 
         num1 = resultado;
+        num2 = 0;
     }
 
     if (factorSelec == `-`) {
@@ -79,6 +80,7 @@ let btnFactorIgualdad = ()=> {
         boxNum2.innerHTML=` `;
 
         num1 = resultado;
+        num2 = 0;
     }
 
     if (factorSelec == `x`) {
@@ -89,6 +91,7 @@ let btnFactorIgualdad = ()=> {
         boxNum2.innerHTML=` `;
 
         num1 = resultado;
+        num2 = 0;
     }
 
     if (factorSelec == `/`) {
@@ -99,6 +102,7 @@ let btnFactorIgualdad = ()=> {
         boxNum2.innerHTML=` `;
 
         num1 = resultado;
+        num2 = 0;
     }
 }
 

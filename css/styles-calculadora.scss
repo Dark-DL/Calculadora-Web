@@ -5,13 +5,19 @@
     box-sizing: border-box;
 }
 
+// DARK TEMA
 $color-fondo: rgb(46, 46, 46);
-$color-patalla: rgb(110, 110, 110);
 $color-number-pantalla: rgb(190, 248, 132);
 
 $color-btn: rgb(54, 54, 54);
 $color-tapbtn: rgb(71, 71, 71);
 
+// SUN TEMA
+$color-fondo-sun: rgb(255, 230, 192);
+$color-number-pantalla-sun: #000;
+
+$color-btn-sun: #fff;
+$color-tapbtn-sun: rgba(51, 51, 51, 0.219);
 
 
 body {
@@ -21,6 +27,8 @@ body {
     justify-content: center;
     align-items: center;
 
+    transition: all 0.3s;
+
     .box-calculadora {
         width: 100%;
         max-width: 600px;
@@ -29,6 +37,8 @@ body {
         flex-direction: column;
         text-align: center;
         background: $color-fondo;
+
+        
         
 
         .box-calculadora__head {
@@ -74,6 +84,7 @@ body {
                 align-items: center;
                 font-size: 25px;
                 cursor: pointer;
+                user-select: none;
             }
 
             .box-calculadora__body-btn:hover {
@@ -133,6 +144,127 @@ body {
             .btn-reset {
                 grid-column: 1 / 2;
                 grid-row: 4 / 5;
+            }
+
+        }
+    }
+
+
+    .box-tema {
+        width: 40px;
+        height: 15px;
+        border-radius: 10px;
+        background: rgb(69, 153, 139);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        position: absolute;
+        top: 8px;
+        right: 5px;
+
+        cursor: pointer;
+        user-select: none;
+
+        transition: all .3s;
+
+        .box-tema__icon {
+            width: 20px;
+            height: 20px;
+            background: rgb(0, 65, 82);
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .sol-icon {
+                width: 13px;
+            }
+
+            .luna-icon {
+                display: none;
+            }
+        }
+
+        
+    }
+
+    .darkActive {
+        display: flex;
+        justify-content: flex-end;
+        background: $color-fondo;
+
+        .box-tema__icon {
+            width: 20px;
+            height: 20px;
+            background: rgb(15, 15, 15);
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .sol-icon {
+                display: none;
+            }
+
+            .luna-icon {
+                display: block;
+                width: 11px;
+            }
+        }
+    }
+}
+
+
+// SUN TEMA
+
+.body-sun {
+    background: $color-fondo-sun;
+
+    .box-calculadora {
+        background: $color-fondo-sun;
+
+        .box-calculadora__head {
+
+            .box-calculadora__head-title {
+                color: #000;
+                text-shadow: 0 0 15px rgba(0, 0, 0, 0.685);
+                
+            }
+
+            .box-calculadora__head-pantalla {
+                background: $color-fondo-sun;
+                color: $color-number-pantalla-sun;
+                text-shadow: none;
+            }
+        }
+
+        .box-calculadora__body {
+
+            .box-calculadora__body-btn {
+                background: $color-btn-sun;
+            }
+
+            .box-calculadora__body-btn:hover {
+                animation-name: tapBtnDark;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+
+            @keyframes tapBtnDark {
+                0% {
+                    background: $color-tapbtn-sun;
+                }
+
+                80% {
+                    background: $color-btn-sun;
+                }
+
+
             }
 
         }
